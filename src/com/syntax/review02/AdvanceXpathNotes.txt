@@ -1,0 +1,29 @@
+Advance Xpath:
+    *Get to the nearest sibling, parent or ancestor which is uniquely accessible. Then access your desired tag
+
+    //label[@name = 'myid']following-sibling::input
+     -->Hey driver get me the tag "label" which has attribute "name" whose value is "myid"
+        AND THEN
+        get me its following sibling which has the tagname "input"  -->following sibling is the one we are wanting to access
+
+    //label[@name='id']/preceding-sibling::input
+    -->Hey driver get me the tag "label" which has attribute "name" whose value is "id"
+               AND THEN
+               get me its preceding sibling which has the tagname "input"  -->preceding sibling is the one we are wanting to access
+
+    //label[@name='myid']/parent::div
+    -->Hey driver get me the tag "label" which has attribute "name" whose value is "myid"
+                   AND THEN
+                   get me its parent which has the tagname "div"  -->parent is the one we are wanting to access
+
+    //label[@name='myid']/ancestor::form
+    -->Hey driver get me the tag "label" which has attribute "name" whose value is "myid"
+                       AND THEN
+                       get me its ancestor which has the tagname "form"  -->ancestor is the one we are wanting to access
+
+Cascading Xpath:
+    *Using 'and' operator on the xpath:
+        //iput[@id='user_phone' and @name='phone']
+
+
+

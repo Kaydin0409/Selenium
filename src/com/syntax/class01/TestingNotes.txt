@@ -1,0 +1,33 @@
+==>What is Software testing?
+    *Identify the correctness and quality of the application
+
+==>How many ways can we actually test?
+    *Manual
+    *Automation
+
+==>When do we perform automation testing?
+    *After manual testing is passed
+    *When environment is stable
+    *Analyze our test suite and choose our automation tools
+
+==>What automation tools do we know about?
+    *Selenium, Cucumber, TestNG, JUnit, Katalon Studio, UFT/QTP
+
+==>Levels of Testing:
+    *Unit Testing  //developers
+    *Integration Testing //testers
+    *Acceptance Testing //end users (client)
+    *System Testing //DevOps (This occurs before everything.  Testing environments and servers)
+
+==>Types of Testing:
+    *Functional Testing: smoke test, regression testing, sanity testing
+            -->qa/testers main responsibility
+    *Non-functional Testing:
+      1) performance testing: load/stress; how your application will act in severe load (200,000 users log in, how will it perform)
+            -->performance qa testers do this(separate team)
+      2) security testing: ensures application is safe (no one can hack application); how easy is it to hack?
+            --> cyber-security analyst
+
+
+
+

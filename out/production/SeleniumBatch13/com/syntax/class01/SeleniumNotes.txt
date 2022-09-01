@@ -1,0 +1,39 @@
+==>What is Selenium?
+    *Is a set of tools which helps us to automate web applications.  It is mainly use to perform functional testing.
+
+==>Selenium Components:
+    *Selenium IDE: Integrated Development Environment
+    *Selenium Grid: Firefox plugin (outdated)
+    *Selenium Webdriver
+    *Seneium RC: Remote Control
+
+==>What is Selenium Webriver?
+    *Open source automation tool which allows us to perform actions on web applications
+    *WebDriver is an Interface
+
+==>Advantages of Selenium Webdriver
+    *Open source
+    *Works with different browsers and supports cross browsing testing
+    *Works with different operating system //OS independent: iOS,Windows,Linux
+    *Works with different programming languages: Java,Python,Ruby,Javascript
+
+==>Disadvantages of Selenium WebDriver:
+    *Cannot test desktop applications
+    *Cannot test mobile applications
+    *No technical support
+    *No built-in reports (have to use testNG)
+    *Unable to test images, videos, and captchas //must test manually
+
+==>get() vs. navigate()
+    *navigate() gives more options: back, forward, refresh
+    *get() will wait for page to fully load before moving on, whereas navigate does not wait and continues onto next
+     line of code
+    *get() does not keep track of history, whereas navigate() will
+
+==>close() vs. quit()
+    *close() will close the current tab
+    *quit() will close the entire browser
+
+==>fullscreen() vs maximize()
+    *maximize() maximizes the browser and the control panel is still visible (back, forward, bookmarks)
+    *fullscreen() maximizes the whole web page, and control panel is not visible

@@ -1,0 +1,56 @@
+==>Why do we need Xpath and CSS selector?
+    *Developers may not provide all the locators in html
+    *By using xpath and css we can identify elements with any given attributes
+==>What is an Xpath?
+    *xpath is like a query (request something) language which helps us to identify elements uniquely on the web page
+     (requesting something from HTML--a WebElement)
+
+==>Types of Xpath
+    1) Absolute x-path:
+       *starts from the starting node of the html
+       *it always starts with a single slash (/)
+       *e.g /html/body/div/div/div
+       *almost never used
+       *asked about sometimes in interview
+    2 )Relative x-path:
+        *starts from any node in html
+        *it always starts with double slash (//)
+
+        -->Syntax for relative x-path:
+            //tagname[@attribute = 'attribute value']
+            e.g. //input[@input='email']
+
+        -->Identifying Elements by its Text:
+            //tagname[text() = 'text value']
+            e.g //a[text()='Create new account']
+            e.g //h2[text()='Connect with friends and the world around you on Facebook']
+
+        -->Identifying Elements by Using Contains():
+            //tagname[contains(@attribute, 'partial attribute value')]
+            //tagname[contains(text(),'partial text')]
+
+        -->Identify Elements by Starts-with
+            *starts-with will identify elements by its partial starting value
+            //tagname[starts-with(@attribute,'partial starting attribute value')]
+
+    3) Advanced Xpath:
+        *Is based on parent and child, sibling relationships
+        *Useful for elements with duplicate attributes
+
+        *Identify element byfollowing sibling
+         //tagname[@attribute = 'attribute value']/following-sibling::siblingTagname
+         e.g //input[@id='calFromDate']/following-sibling::img
+
+        *Identify element by the preceding sibling
+         //tagname[@attribute = 'attribute value']/preceding-sibling::siblingTagname
+
+        *Identify element by its parent
+        //tagname[@attribute = 'attribute value']/parent::parentTagname
+
+        *Identify element by its ancestors
+        //tagname[@attribute = 'attribute value']/ancestor::ancestorTagname
+        *Identify element by its index
+         (//tagname[@attribute = 'attribute value'])[indexing#]
+
+
+

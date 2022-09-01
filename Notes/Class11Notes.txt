@@ -1,0 +1,7 @@
+==>Actions Class
+    *Given by selenium to capture keyboard and mouse events such as:
+        -move to element
+        -drag and drop
+        -double click
+        -right click (context click)
+

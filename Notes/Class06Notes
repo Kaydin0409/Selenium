@@ -1,0 +1,43 @@
+==>Alerts
+    *A Pop-up message
+    *Take a complete focus of our main page that we are on
+    *We cannot proceed further until it is handled
+
+==>Types of Alerts:
+    1)Web Based Alerts /HTML Alerts     -->They can be inspected and perform needed actions
+
+    2)Javascript Alerts /Browser Alerts -->part of the browser, not webpage, so cannot be inspected (not stored in DOM)
+                                        -->we can handle these alerts by using switchTo method
+                                        -->Types:
+                                            1.Simple Alert: click OK
+                                            2.Confirmation Alert: either Cancel or click OK
+                                            3.Prompt Alert: enter the Text and click OK or Cancel
+                                        -->To Handle these Alerts there are 4 Methods from Alert Interface:
+                                            1. accept() - click ok
+                                            2. dismiss() - click on cancel
+                                            3. getText()
+                                            4. sendKeys()
+
+    3)Windows Based Alerts              -->we cannot handle with Selenium
+                                        -->your computer window that can pop up from website link--not part of browser or webpage
+
+
+
+================================================================================================================================
+
+==>Frames
+    *A separate independent window in our webpage
+    *Allows devs to represent multiple views on one page
+    *3 ways to interact or to switch to a Frame
+        1) By index
+        2) By name or id
+        3) By WebElement
+
+**IN ALERTS: we switch to an alert manually and switch back to main page automatically once done with alert
+**IN FRAMES: we switch to frame manually and when finished, switch back to the main page manually
+
+**INTERVIEW QUESTION: How do you handle Alerts in Selenium?**
+By using Alert Interface
+
+
+

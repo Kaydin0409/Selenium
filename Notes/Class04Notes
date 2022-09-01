@@ -1,0 +1,52 @@
+==>Css Selectors (Cascading Style Sheet)
+   It is another way of locating elements on the web page
+
+Syntax:
+tagname[attribute = 'attribute value']
+e.g input[value = 'LOGIN']
+
+**Css does not give us an opportunity to locate by its text**
+
+Shortcuts for Css:
+Shortcut for the className --> "."
+
+Syntax: tagname.classNameValue
+e.g input.button
+
+Shortcut for ID --> "#"
+
+Syntax: tagname#idValue
+e.g input#txtPassword
+
+contains() method in Css:
+* symbol represents contains method
+tagname[attribute *= 'partial attribute value']
+input[placeholder *= 'phone']
+
+starts-with method in Css:
+^ (Circumflex) symbol represents starts-with method
+tagname[attribute ^= 'starting attribute value']
+input[aria-label ^= 'Pass']
+
+ends-with method in Css:
+$ symbol represents ends-with method in Css
+tagname[attribute $= 'ending attribute value']
+a[href $= 'login']
+
+Xpath Vs Css:
+-- Css cannot locate the elements by text whereas Xpath can
+-- Css has shortcuts
+-- Xpath does not have ends-with method
+-- Css is faster than Xpath in locating elements
+-- Css has more simple syntax than Xpath
+
+WebElement Commands:
+    *Consists of several methods where we can perform an action and get the element state on the webpage
+
+    -->isEnabled() --> boolean
+    -->isDisplayed() --> boolean
+    -->isSelected() --> boolean
+    -->clear() -->deletes text, void return type
+    -->getText() --> returns String value
+    -->getAttribute() --> returns attribute value (String)
+    -->submit() --> void return type

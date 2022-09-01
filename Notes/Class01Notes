@@ -1,0 +1,19 @@
+What is software testing?
+    *Identify the correctness and quality of the application
+
+==>How many ways can we actually test?
+    *Manual
+    *Automatic
+
+==>When do we start automation testing?
+    *After manual testing is passed
+    *When testing environment is stable
+    *Analyze our test suite and choose our automation tools
+
+==>Automatin Tools:
+    *Selenium
+    *Cucumber
+    *TestNG
+    *Katalon Studio (NOT GOOD)
+    *JUnit
+

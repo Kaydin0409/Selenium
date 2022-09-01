@@ -1,0 +1,46 @@
+==>Calendars
+    *Also called date-pickers
+
+==>How to Handle Calendars:
+    1) Click on Calendar
+    2) Locate the month and get text
+    3) If the desired text is not visible --> keep clicking on next, and be sure to update month text
+    4) As soon as we find our desired text --> grab all the cells from the table
+    5) Loop through the cells
+    6) Once the cell value is matched with our condition --> click on the matched date
+
+==>Why do We Need ScreenShots in Testing:
+    *In testing it is very important to take screenshots in order to prove that our tests covered certain functionality
+    *Show whether test passed or failed
+
+==>TakesScreenShot Interface
+    *Since you can't create an object from interface must cast to Driver:
+        TakesScreenShot tss=(TakesScreenShot)driver;
+        File srcFile=ts.getScreenshotAs(OutputType.FILE); //screenshot is taken
+
+        HW
+        Go to http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
+        click on leave
+        click on leave list
+        choose from "From calendar"
+        choose from "To calendar"
+        click only on cancelled and rejected checkboxes
+        uncheck Pending Approval
+        select IT support from DD
+        click search
+        quit the browser
+
+        HW
+        Go to aa.com/homePage.do
+        select depart date
+        select return date
+        select destination
+        click on search
+        quit the browser
+        Footer
+        © 2022 GitHub, Inc.
+        Footer navigation
+        Terms
+
+
+

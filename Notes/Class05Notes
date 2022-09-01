@@ -1,0 +1,23 @@
+==>Handling checkboxes and radiobuttons:
+    *If only 1 checkbox or 1 radiobutton, you can just click on it
+    *If you have multiple choices, you can store them in a List and loop through (just like multiple WebElements)
+
+==>DropDowns
+    *a menu which gives us an opportunity to select one or more options
+    *2 Types:
+        1)Single Select
+        2)Multiple Select
+    *Handling DropDowns:
+        1)Click on DropDowns and click on Option
+        2)Using Select Class //tag of dropdown must have select tagname if this option is used
+    *Selection an Option from a DropDown can be done in 3 ways:
+        1)by index
+        2)by visible text
+        3)by value
+    *Whenever multiple elements are interacted with, you store them inside the container such as List, Set, etc and select.getOptions
+    *In order to deselect the option from dropdown
+        -->Make sure dropdown is multiple select
+        -->deselectByValue()
+        -->deselectByVisible()
+        -->deselectByIndex()
+        -->deselectAll()
